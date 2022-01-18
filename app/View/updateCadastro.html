@@ -1,0 +1,19 @@
+<h1>Alterar Cadastro</h1>
+
+<form method="post" action="?pagina=cadastro&metodo=update">
+	<span>Nome</span><br>
+	<input type="text" name="nome" value="{{nome}}"><br><br>
+
+	<span>CPF</span><br>
+	<input type="text" name="cpf" value="{{cpf}}"><br><br>
+
+	<span>Endereço</span><br>
+	<input type="text" name="endereco" value="{{endereco}}"><br><br>
+
+	<span>Telefone</span><br>
+	<input type="text" name="telefone" value="{{telefone}}"><br><br>
+
+	<input type="hidden" name="id" value="{{id}}">
+
+	<input type="submit" value="Alterar">
+</form>

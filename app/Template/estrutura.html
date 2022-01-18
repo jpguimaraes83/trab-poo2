@@ -1,0 +1,49 @@
+<html>
+	<head>
+	</head>
+	
+	<body>
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			body{background-color: rgb(134, 143, 140);}
+
+			#corpo{width: 1000px; background-color: rgb(33, 33, 33); margin: 0 auto; border-left: 5px solid rgb(255, 255, 255); border-right: 5px solid rgb(255, 255, 255);}
+                #topo {padding: 20px 25px; border-bottom: 5px solid rgb(255, 255, 255);}
+                #topo a{color: rgb(255, 255, 255); text-decoration: none; font:20px Arial}
+                #topo a:hover{text-decoration: underline;}
+
+				.flutuacao-dir{padding: 2px; float: right;}
+
+				#conteudo{background-color: #FFF; padding: 20px 25px;}
+				#conteudo h1{font:24px Arial; color:#000000; margin-bottom: 20px;}
+
+				#conteudo article{margin-bottom: 20px;}
+						  article h2{  padding-bottom: 7px; }
+						  article h2 a{font:22px Arial; color: #333; text-decoration: none;}
+						  article h2 a:hover{ text-decoration: underline; }
+
+						  article p{font:16px Arial; color: #333; padding-left: 2px;}
+				#form a{ color: rgb(0, 0, 0); text-decoration: none; font:20px Arial;}
+				#form a:hover{text-decoration: underline;}
+		</style>
+
+		<div id="corpo">
+			<div id="topo">
+				<header>
+					<nav>
+						<a href="http://localhost/trab-poo2">Home</a>
+						<a>|</a>
+						<a href="http://localhost/trab-poo2/?pagina=sobre">Sobre</a> 
+						<a href="http://localhost/trab-poo2/?pagina=cadastro&metodo=index" class="flutuacao-dir">Clientes</a> 
+						<a class="flutuacao-dir">|</a>
+						<a href="http://localhost/trab-poo2/?pagina=admin&metodo=index" class="flutuacao-dir">Admin Conteúdo</a> 
+					</nav>
+				</header>
+			</div>
+
+			<div id="conteudo">
+				{{area_dinamica}}
+			</div>
+		</div>
+	</body>
+</html>

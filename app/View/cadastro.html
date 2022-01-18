@@ -1,0 +1,47 @@
+<h1>Gerenciador de Conteúdo</h1>
+
+<body>
+	<div id="form">
+		<header>
+		<nav>
+			<a href="http://localhost/trab-poo2/?pagina=cadastro&metodo=create">Cadastrar Clientes</a><br><br>
+		</header>
+	</div>
+</body>
+
+<hr>
+<section>
+    <h1>Clientes</h1>
+    <article>
+        <p><table border="2">
+			<tr>
+				<th>ID</th>
+				<th>NOME</th>
+				<th>CPF</th>
+				<th>ENDEREÇO</th>
+				<th>TELEFONE</th>
+				<th>ALTERAR</th>
+				<th>DELETAR</th>
+			</tr>
+		
+		
+			{% for cadastro in cadastros %}
+			<tr>
+				<th>{{cadastro.id}}</th>
+				<th>{{cadastro.nome}}</th>
+				<th>{{cadastro.cpf}}</th>
+				<th>{{cadastro.endereco}}</th>
+				<th>{{cadastro.telefone}}</th>
+				<th><a href="http://localhost/trab-poo2/?pagina=cadastro&metodo=change&id={{cadastro.id}}">Alterar</a></th>
+				<th><a href="http://localhost/trab-poo2/?pagina=cadastro&metodo=delete&id={{cadastro.id}}">Deletar</a></th>
+			</tr>
+			{% endfor %}
+		
+		</table></p>
+    </article>
+</section>
+			
+			
+			
+			
+			
